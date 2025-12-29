@@ -1,217 +1,193 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #333;
-  font-size: 20px;
-}
-
-.screen {
-  height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  padding: 0 5%;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.sc1 { background-color: #d5e8f6; }
-.sc2 { background-color: #dffbc0; }
-.sc3 { background-color: #f3e7bf; }
-.sc4 { background-color: #f9d0df; }
-.sc5 { background-color: #e1e4f6; }
-.sc6 { background-color: #f4ddf7; }
-
-.content-row {
-  display: flex;
-  align-items: center;
-  max-width: 1100px;
-  gap: 40px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.content-row.reverse {
-  flex-direction: row-reverse;
-}
-
-.text {
-  flex: 1;
-  max-width: 500px;
-}
-
-.text h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
-  color: #070707;
-}
-
-.text p {
-  font-size: 20px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.text ul {
-  text-align: left;
-  margin: 20px 0;
-  padding-left: 25px;
-  font-size: 20px;
-  line-height: 1.7;
-}
-
-.text ul li {
-  margin-bottom: 10px;
-}
-
-.image {
-  flex: 1;
-  max-width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; 
-}
-
-.image img {
-  max-width: 100%;
-  max-height: 75vh; 
-  height: auto;
-  width: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  object-fit: contain; 
-}
-
-.buttom {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.link {
-  font-size: 20px;
-  color: #030303;
-  text-decoration: underline;
-  font-weight: bold;
-  text-align: center;
-}
-
-.link:hover {
-  text-decoration: none;
-}
-
-.banner-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 2px dashed #ccc;
-}
-
-.banner {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.banner:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-
-.banner span {
-  font-size: 28px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.banner h3 {
-  font-size: 20px;
-  margin: 10px 0;
-  color: #070707;
-}
-
-.banner p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  color: #555;
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-
-  .screen {
-    height: auto;
-    min-height: 100vh;
-    padding: 20px;
-    justify-content: flex-start;
-  }
-
-  .content-row {
-    flex-direction: column !important;
-    text-align: center;
-    gap: 25px;
-    margin-top: 20px;
-  }
-
-  .text {
-    max-width: 100%;
-  }
-
-  .text h2 {
-    font-size: 28px;
-  }
-
-  .text ul {
-    padding-left: 30px;
-    font-size: 18px;
-  }
-
-  .image {
-    height: auto;
     margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+    font-size: 30px;
   }
-
+  
+  .screen {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 0 5%;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .s1 { background-color: #d5e8f6; }
+  .s2 { background-color: #dffbc0; }
+  .s3 { background-color: #f3e7bf; }
+  .s4 { background-color: #f9d0df; }
+  .s5 { background-color: #e1e4f6; }
+  .s6 { background-color: #f4ddf7; }
+  
+  .box {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .text {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .text h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #070707;
+  }
+  
+  .text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .text ul {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 25px;
+    font-size: 20px;
+  }
+  
+  .text ul li {
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  }
+  
   .image img {
-    max-height: 40vh; 
-    width: 90%;
+    max-width: 100%;
+    max-height: 75vh; 
+    height: auto;
+    width: auto;
   }
-
+  
   .buttom {
-    position: static;
-    transform: none;
-    margin: 30px 0;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
   }
-
+  
   .link {
-    font-size: 18px;
+    font-size: 20px;
+    color: #030303;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
   }
-
-  .banner-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+  
+  .blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid black;
   }
-
-  .banner {
-    padding: 16px;
+  
+  .block {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    
   }
-
-  .banner h3 {
-    font-size: 18px;
+  
+  .block h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #070707;
   }
-
-  .banner p {
-    font-size: 15px;
+  
+  .block p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: #070707;
   }
-}
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .screen {
+      height: auto;
+      min-height: 100vh;
+      padding: 20px;
+      justify-content: flex-start;
+    }
+  
+    .box {
+      flex-direction: column !important;
+      text-align: center;
+      gap: 25px;
+      margin-top: 20px;
+    }
+  
+    .text {
+      max-width: 100%;
+    }
+  
+    .text h2 {
+      font-size: 28px;
+    }
+  
+    .text ul {
+      padding-left: 30px;
+      font-size: 18px;
+    }
+  
+    .image {
+      height: auto;
+      margin: 0;
+    }
+  
+    .image img {
+      max-height: 40vh; 
+      width: 90%;
+    }
+  
+    .buttom {
+      position: static;
+      transform: none;
+      margin: 30px 0;
+    }
+  
+    .link {
+      font-size: 18px;
+    }
+  
+    .blocks {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  
+    .block {
+      padding: 16px;
+    }
+  
+    .block h3 {
+      font-size: 18px;
+    }
+  
+    .block p {
+      font-size: 15px;
+    }
+  }
