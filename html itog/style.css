@@ -135,7 +135,7 @@ body {
     }
   
     .box {
-      flex-direction: column !important;
+      flex-direction: column;
       text-align: center;
       gap: 25px;
       margin-top: 20px;
@@ -191,3 +191,4 @@ body {
       font-size: 15px;
     }
   }
+
